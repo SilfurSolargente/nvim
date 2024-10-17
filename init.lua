@@ -1,2 +1,2 @@
-require("silfur.lazy")
 require("silfur.core")
+require("silfur.lazy")
