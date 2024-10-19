@@ -37,6 +37,7 @@ return {
         "emmet_ls",
         "prismals",
         "pyright",
+        "jdtls",
       },
     })
 
@@ -46,6 +47,8 @@ return {
         "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
+        "clang-format", -- java, C, C++, javascript formatter
+        "checkstyle", -- java linter
         "pylint",
         "eslint_d",
       },
