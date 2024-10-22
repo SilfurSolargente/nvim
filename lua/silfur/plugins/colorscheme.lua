@@ -15,7 +15,7 @@ return {
     local border = "#547998"
 
     require("rose-pine").setup({
-      style = "night",
+      style = "moon",
       transparent = transparent,
       styles = {
         sidebars = transparent and "transparent" or "dark",
@@ -23,13 +23,13 @@ return {
       },
       on_colors = function(colors)
         colors.bg = bg
-        colors.bg_dark = transparent and colors.none or bg_dark
-        colors.bg_float = transparent and colors.none or bg_dark
+        colors.bg_dark =  colors.none
+        colors.bg_float =  colors.none
         colors.bg_highlight = bg_highlight
         colors.bg_popup = bg_dark
         colors.bg_search = bg_search
-        colors.bg_sidebar = transparent and colors.none or bg_dark
-        colors.bg_statusline = transparent and colors.none or bg_dark
+        colors.bg_sidebar =  colors.none
+        colors.bg_statusline = colors.none
         colors.bg_visual = bg_visual
         colors.border = border
         colors.fg = fg
