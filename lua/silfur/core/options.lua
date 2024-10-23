@@ -36,3 +36,6 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+--Makes it so w ignores dashes when going through words
+opt.iskeyword:append("-")
