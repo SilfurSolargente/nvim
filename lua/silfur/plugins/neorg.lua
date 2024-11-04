@@ -1,25 +1,26 @@
 return {
-    "nvim-neorg/neorg",
-    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
-    version = "*", -- Pin Neorg to the latest stable release
-    config = function()
+  "nvim-neorg/neorg",
+  lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
+  version = "*", -- Pin Neorg to the latest stable release
+  config = function()
     require("neorg").setup {
-    load = {
-      ["core.defaults"] = {},
-      ["core.concealer"] = {},
+      load = {
+        ["core.defaults"] = {},
+        ["core.integrations.treesitter"] = {},
+        ["core.concealer"] = {},
         ["core.keybinds"] = {
           confg = {
-        neorg_leader = ",",
+            neorg_leader = ",",
           }
         },
-      ["core.dirman"] = {
-        config = {
-          workspaces = {
-            notes = "~/Documents/Notes/",
+        ["core.dirman"] = {
+          config = {
+            workspaces = {
+              notes = "~/Documents/Notes/",
+            },
+            default_workspace = "notes",
           },
-          default_workspace = "notes",
         },
       },
-    },
-  } end;
+    } end;
 }
